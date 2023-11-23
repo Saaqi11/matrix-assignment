@@ -1,0 +1,127 @@
+.header{
+    background-color: #3B82F6;
+    padding: 10px;
+}
+.header h1{
+    font-size: 24px;
+    color: #fff;
+}
+.content{
+    position: relative;
+    padding-top: 100px;
+}
+.error-message{
+    padding: 10px;
+    color: #721c24 !important;
+    background-color: #f8d7da;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translatex(-50%)
+}
+.container{
+    margin: 0 auto;
+}
+.matrix-holder .matrix{
+    width: 760px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: #e3e3e3;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.matrix-holder .matrix input{
+    margin: 2px;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+}
+.matrix .matrix-body{
+    justify-content: center;
+}
+.matrix-holder .matrix .matrix-header{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.matrix-holder .matrix .matrix-header input{
+    width: 60px;
+}
+.matrix-holder{
+    display: flex;
+    max-width: 1200px;
+    flex-flow: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+}
+.matrix input::-webkit-outer-spin-button,
+.matrix input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.matrix input[type=number] {
+  -moz-appearance: textfield;
+}
+.multiply-btn{
+    text-align: center;
+}
+.result-holder{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.result-matrix > div{
+    justify-content: center;
+}
+.mat-holder{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.mat-holder .matrix-header{
+    width: 30%;
+}
+.mat-holder .matrix-header > div{
+    display: flex;
+    align-items: center;
+}
+.mat-holder .matrix-header label{
+    display: block;
+    font-weight: 500;
+    width: 75px;
+}
+.result-matrix input{
+    width: 60px;
+    height: 50px;
+}
+.mat-holder .mat-block{
+    width: 70%;
+}
+@media(max-width: 575px){
+    .mat-holder{
+        flex-flow: column;
+    }
+    .mat-holder div{
+        width: 100% !important;
+    }
+    .matrix-header{
+        flex-flow: row !important;
+        margin-bottom: 10px;
+    }
+    }
+@media(max-width: 767px){
+    .matrix-holder{
+        flex-flow: column;
+    }
+    .matrix-holder .matrix{
+        max-width: 95%;
+        margin: 5px auto;
+    }
+}
